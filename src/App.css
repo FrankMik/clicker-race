@@ -1,0 +1,142 @@
+.app {
+  text-align: center;
+  padding: 1rem;
+  font-family: "Comic Sans MS", sans-serif;
+  background-color: #78c24d;
+  height: 100vh;
+  width: 100vw;
+}
+
+.title {
+  font-size: 2rem;
+  color: #333;
+}
+
+.scoreboard {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.button {
+  background-color: #f14318;
+  color: white;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.1s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.button.click {
+  background-color: #373ae9;
+}
+
+.winner {
+  color: #fce307;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.progress-bar {
+  background-color: #ddd;
+  border-radius: 10px;
+  width: 80%;
+  height: 25px;
+  margin: 0.5rem auto 1rem;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #aaa;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.2s ease;
+}
+
+.progress.player {
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  animation: pulsePlayer 1s infinite alternate;
+}
+
+.progress.computer {
+  background: linear-gradient(90deg, #ff5722, #ff8a65);
+  animation: pulseComputer 1s infinite alternate;
+}
+
+.click-emoji {
+  position: absolute;
+  font-size: 2rem;
+  animation: floatUp 0.5s ease-out forwards;
+  pointer-events: none;
+}
+
+.countdown {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.countdown h2 {
+  font-size: 6rem;
+  font-weight: 900;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  animation: pop 0.6s ease-in-out;
+  background: linear-gradient(90deg, #ff0000, #ffa500, #00ff00);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.countdown h2.los {
+  color: limegreen !important;
+  -webkit-text-fill-color: limegreen !important;
+  animation: popGreen 0.8s ease-in-out;
+  text-shadow: 0 0 30px limegreen;
+}
+
+@keyframes popGreen {
+  0% { transform: scale(0.5); opacity: 0; }
+  50% { transform: scale(1.5); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.2); opacity: 0; }
+  60% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+@keyframes floatUp {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-50px) scale(1.3); opacity: 0; }
+}
+
+@keyframes pulsePlayer {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.3); }
+  100% { filter: brightness(1); }
+}
+
+@keyframes pulseComputer {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.3); }
+  100% { filter: brightness(1); }
+}
