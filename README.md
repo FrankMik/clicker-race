@@ -10,3 +10,5 @@ Klicke so schnell du kannst, um als erster die Zielpunktzahl zu erreichen!
 - Klicke so schnell wie möglich auf den Button  
 - Der Computer klickt automatisch  
 - Wer zuerst die Zielpunktzahl erreicht oder am Ende der Zeit die meisten Punkte hat, gewinnt
+
+Link zum Spiel: https://frankmik.github.io/clicker-race/
