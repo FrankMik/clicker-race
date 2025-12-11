@@ -1,6 +1,6 @@
 # 🏁 Clicker-Rennen 
-<img width="900" height="900" alt="react" src="https://github.com/user-attachments/assets/a97d8e6b-55ff-4dd4-97c8-b521c99558be" />
-<img width="1200" height="627" alt="vite" src="https://github.com/user-attachments/assets/2bc0ec0d-6db5-4d5c-be4b-675a7c656a99" />
+<img width="500" height="500" alt="react" src="https://github.com/user-attachments/assets/a97d8e6b-55ff-4dd4-97c8-b521c99558be" />
+<img width="500" height="500" alt="vite" src="https://github.com/user-attachments/assets/2bc0ec0d-6db5-4d5c-be4b-675a7c656a99" />
 
 Ein kleines Clicker-Spiel für Kinder mit React und Vite. Du trittst gegen den Computer an und klickst so schnell du kannst, um als Erster die Zielpunktzahl zu erreichen.
 
